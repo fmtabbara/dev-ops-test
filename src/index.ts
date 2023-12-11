@@ -1,7 +1,7 @@
 function greet(name: string) {
   return `Hello ${name}!`
 }
-const greeting = greet(3)
+const greeting = greet('Bun')
 
 console.log(greeting)
 
