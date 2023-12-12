@@ -1,9 +1,8 @@
 function greet(name: string) {
-  return `Hello ${name}!`
+  return `Hello ${name}!`;
 }
-const unused = 1
-const greeting = greet(3)
+const greeting = greet('Bun');
 
-console.log(greeting)
+console.log(greeting);
 
-export default greet
+export default greet;
