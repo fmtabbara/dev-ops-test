@@ -14,10 +14,20 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: oven-sh/setup-bun@v1
+      - name: checkout main
+        uses: actions/checkout@v3
 
-      - run: bun install
-      - run: bun lint
-      - run: bun type-check
-      - run: bun test
+      - name: setup bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: install bun
+        run: bun install
+
+      - name: run lint
+        run: bun lint
+
+      - name: run type-check
+        run: bun type-check
+
+      - name: run test
+        run: bun test
