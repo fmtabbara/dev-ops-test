@@ -8,6 +8,8 @@ export class AppController {
   @Get()
   getHello(): string {
     const str: string = 3;
+    console.log(str);
+
     return this.appService.getHello();
   }
 }
